@@ -145,7 +145,7 @@ const Footer = () => {
           </SubscribeForm>
         </Container>
       </div>
-      <CopyrightText>&#169; {currentYear} Tony Kalalian</CopyrightText>
+      <CopyrightText>&#169; {currentYear} TMT-SOLUTIONS</CopyrightText>
     </StyledFooter>
   );
 };
