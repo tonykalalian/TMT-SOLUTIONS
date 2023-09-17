@@ -3,6 +3,7 @@ import axios from "axios";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faEdit } from "@fortawesome/free-solid-svg-icons";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const ProductCard = styled.div`
   .card-body {
@@ -41,7 +42,7 @@ const ProductPage = () => {
   return (
     <div className="album py-5 bg-body-tertiary">
       <div className="container">
-        <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3">
           {products.map((product) => (
             <div key={product.id} className="col">
               <ProductCard>
@@ -61,12 +62,12 @@ const ProductPage = () => {
                     <p className="card-text">${product.price}</p>
                     <div className="d-flex justify-content-between align-items-center">
                       <div className="btn-group">
-                        <button
-                          type="button"
+                        <Link
+                          to={`/product/${product.id}`}
                           className="btn btn-sm btn-outline-secondary"
                         >
                           <FontAwesomeIcon icon={faEye} /> View
-                        </button>
+                        </Link>
                         <button
                           type="button"
                           className="btn btn-sm btn-outline-secondary"
