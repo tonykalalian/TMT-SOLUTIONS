@@ -42,21 +42,22 @@ const Navbar = () => {
               <FontAwesomeIcon icon={faCube} /> Product
             </NavLink>
             <NavLink
-              to="/contact"
-              className="nav-link"
-              activeclassname="active"
-            >
-              <FontAwesomeIcon icon={faEnvelope} /> Contact
-            </NavLink>
-            <NavLink
               to="/services"
               className="nav-link"
               activeclassname="active"
             >
               <FontAwesomeIcon icon={faWrench} /> Services
             </NavLink>
+            <NavLink
+              to="/contact"
+              className="nav-link"
+              activeclassname="active"
+            >
+              <FontAwesomeIcon icon={faEnvelope} /> Contact
+            </NavLink>
+
             <NavLink to="/about" className="nav-link" activeclassname="active">
-              <FontAwesomeIcon icon={faInfoCircle} /> About
+              <FontAwesomeIcon icon={faInfoCircle} /> About us
             </NavLink>
           </div>
         </div>
