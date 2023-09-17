@@ -16,7 +16,7 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
         <NavLink className="navbar-brand" to="/">
-          <FontAwesomeIcon icon={faGlobe} /> G8T SOLUTIONS
+          <FontAwesomeIcon icon={faGlobe} /> TMT SOLUTIONS
         </NavLink>
         <button
           className="navbar-toggler"
