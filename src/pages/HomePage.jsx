@@ -1,5 +1,10 @@
 import React from "react";
 import BTheme from "../assets/bootstrap-themes.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faArrowRight,
+  faArrowUpFromBracket,
+} from "@fortawesome/free-solid-svg-icons";
 const HomePage = () => {
   return (
     <div className="container col-xxl-8 px-4 py-5">
@@ -29,13 +34,13 @@ const HomePage = () => {
               type="button"
               className="btn btn-primary btn-lg px-4 me-md-2"
             >
-              Primary
+              Github <FontAwesomeIcon icon={faArrowRight} />
             </button>
             <button
               type="button"
               className="btn btn-outline-secondary btn-lg px-4"
             >
-              Default
+              Portfolio <FontAwesomeIcon icon={faArrowUpFromBracket} />
             </button>
           </div>
         </div>
