@@ -6,6 +6,19 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 const ProductCard = styled.div`
+  .card {
+    border: 1px solid #ddd;
+    transition: transform 0.3s, box-shadow 0.3s, opacity 0.3s;
+    opacity: 0.9;
+    border-radius: 5px;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    opacity: 1;
+  }
+
   .card-body {
     padding: 1rem;
   }
@@ -42,6 +55,7 @@ const ProductPage = () => {
   return (
     <div className="album py-5 bg-body-tertiary">
       <div className="container">
+        <h1 className="text-center mb-5">Our Products</h1>
         <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3">
           {products.map((product) => (
             <div key={product.id} className="col">
