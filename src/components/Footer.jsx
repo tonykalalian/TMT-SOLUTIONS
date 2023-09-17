@@ -4,6 +4,7 @@ import styled from "styled-components";
 const StyledFooter = styled.footer`
   background-color: #f8f9fa;
   padding: 2rem 0;
+  text-align: center;
 `;
 
 const Container = styled.div`
@@ -57,7 +58,15 @@ const SubscribeForm = styled.form`
   }
 `;
 
+const CopyrightText = styled.p`
+  font-size: 1rem;
+  color: #555;
+  margin-top: 1rem;
+`;
+
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <StyledFooter>
       <div className="container">
@@ -136,6 +145,7 @@ const Footer = () => {
           </SubscribeForm>
         </Container>
       </div>
+      <CopyrightText>&#169; {currentYear} Tony Kalalian</CopyrightText>
     </StyledFooter>
   );
 };
